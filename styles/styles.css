@@ -31,6 +31,7 @@ body{
 .nav-title-text{
     font-size: 1.8rem;
     font-weight: 700;
+    margin-left: 0.6rem;
 }
 .nav-menu{
     display: flex;
@@ -46,8 +47,218 @@ body{
     color: #FF5400;
 }
 
+/* banner section styles */
+.banner-section{
+    width: 100%;
+    height: 33rem;
+    background-image: url(../images/Group13.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.banner-heading{
+    font-size: 3.2rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.banner-text{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    max-width: 52rem;
+    margin: 0 auto;
+}
+.banner-input-field{
+    width: 48rem;
+    height: 3.5rem;
+    background-color: #ffffff60;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 1rem;
+}
+.input-field{
+    width: 10.8rem;
+    height: 3.4rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+.input-field input{
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+.field_icon{
+    height: 20px;
+    width: 20px;
+}
+.input-button{
+    width: 10.8rem;
+    height: 3.4rem;
+    background-color: #ff5500d8;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+.button_icon{
+    height: 12px;
+    width: 12px;
+    margin-right: 3px;
+}
+
+/* popular tour section */
+.popular-tour-section{
+    width: 100%;
+    margin: 5.8rem auto 0 auto;
+}
+.tour-section{
+    display: flex;
+}
+.section-left-side{
+    width: 50%;
+}
+.tour-heading{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.tour-text{
+    color: #424247;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+}
+.section-left-side ul{
+    margin-top: 2.5rem;
+}
+.section-left-side ul li{
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #424247;
+}
+.section-right-side{
+    width: 50%;
+    text-align: right;
+}
+.right-side-image{
+    height: 33rem;
+    width: 34rem;
+}
+.input-button-tour{
+    width: 10.8rem;
+    height: 3.4rem;
+    background-color: #ff5500d8;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    margin-top: 1.4rem;
+}
+
+/* destination section styles */
+.destionation-details{
+    margin-top: 5.8rem;
+    text-align: center;
+}
+.destination-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.destination-text{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #424247;
+}
+.destination-location{
+    margin-top: 3.8rem;
+}
+.fist-list{
+    display: flex;
+    gap: 1rem;
+}
+.maldives{
+    background-image: url(../images/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.indonesia{
+    background-image: url(../images/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.second-list{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.srilanka{
+    background-image: url(../images/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+}
+.nortamerica{
+    background-image: url(../images/Rectangle\ 7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.kasmir{
+    background-image: url(../images/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+}
+.third-list{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.bangladesh{
+    background-image: url(../images/Rectangle\ 11.png);
+    background-repeat: no-repeat;
+    width: 40%;
+    background-size: cover;
+}
+.bandarban{
+    background-image: url(../images/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    width: 60%;
+    background-size: cover;
+}
+.area-style{
+    height: 20.75em;
+    border-radius: 1.4rem;
+}
+.area-text{
+    color: #FFFFFF;
+    padding: 0;
+    margin-top: 9.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 /* for medium device */
-@media screen and (min-width: 490px) and (max-width: 786px){
+@media screen and (min-width: 490px) and (max-width: 850px){
     body{
         margin: 2.0rem 0.8rem 0rem 0.8rem;
     }
@@ -60,10 +271,21 @@ body{
         margin-left: 1rem;
         margin-top: 0.8rem;
     }
+    /* banner section style */
+    .banner-section{
+        width: 100%;
+        margin-top: 1.4rem;
+    }
+    .banner{
+        width: 100%;
+    }
+    .tour-section{
+        width: 100%;
+    }
 }
 
 /* for mobile device */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 489px){
     body{
         margin: 2.0rem 0.8rem 0rem 0.8rem;
     }
@@ -82,13 +304,125 @@ body{
         margin-left: 0.6rem;
     }
     .nav-menu{
-        max-width: 100%;
-
+        width: 100%;
     }
     .nav-menu li{
         font-size: 1rem;
-        margin-left: 1rem;
+        margin-left: auto;
         margin-top: 0.8rem;
+    }
+    /* banner section style */
+    .banner{
+        margin: 0;
+    }
+    .banner-section{
+        width: 100%;
+        padding: 0;
+        margin-top: 1.8rem;
+    }
+    .banner-heading{
+        font-size: 2.2rem;
+        margin-bottom: 0.6rem;
+        font-weight: 600;
+    }
+    .banner-text{
+        font-size: 0.8rem;
+        font-weight: 400;
+        max-width: 22.6rem;
+        margin: 0 auto;
+    }
+    .banner-input-field{
+        width: 100%;
+        height: 14rem;
+        flex-direction: column;
+        padding: 0 10px;
+        
+    }
+    .input-field{
+        width: 19.5rem;
+        height: 5.4rem;
+        margin-top: 1rem;
+        margin-left: 0;
+        padding: 0;
+    }
+    .right-side-image{
+        height: 24rem;
+        width: 20rem;
+    }
+    .input-button{
+        width: 19.5rem;
+        height: 5.4rem;
+        margin-top: 1rem;
+    }
+    /* popular tour section */
+    .popular-tour-section{
+        width: 100%;
+        margin: 3.8rem auto 0 auto;
+    }
+    .tour-section{
+        flex-direction: column;
+    }
+    .section-left-side{
+        width: 100%;
+    }
+    .tour-heading{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .tour-text{
+        font-size: 1.2rem;
+    }
+    .section-left-side ul li{
+        font-size: 1.2rem;
+    }
+    .right-side-image{
+        height: 25rem;
+        width: 100%;
+    }
+    .section-right-side{
+        width: 100%;
+        margin-top: 1.7rem;
+    }
+    /* destination section styles */
+    .destionation-details{
+        margin-top: 3.8rem;
+        text-align: center;
+    }
+    .destination-title{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .destination-text{
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #424247;
+    }
+    .destination-location{
+        margin-top: 2.5rem;
+    }
+    .fist-list{
+        flex-direction: column;
+    }
+    .second-list{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .third-list{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .area-style{
+        height: 13.75em;
+        border-radius: 1.2rem;
+        width: 100%;
+    }
+    .area-text{
+        color: #FFFFFF;
+        padding: 0;
+        margin-top: 5.5rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
     }
 }
 
