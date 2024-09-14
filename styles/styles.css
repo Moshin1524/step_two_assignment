@@ -257,8 +257,144 @@ body{
     font-weight: 600;
 }
 
+/* service section styles */
+.service-heading{
+    margin-top: 5.8rem;
+    text-align: center;
+}
+.service-heading-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.service-heading-text{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #424247;
+}
+.service-info{
+    margin-top: 2rem;
+}
+.service-list{
+    display: flex;
+    gap: 1rem;
+}
+.alignment{
+    margin: 1rem auto 0 auto;
+}
+.service-card{
+    width: 50%;
+    height: 15rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background-color: #fbb46323;
+}
+.background-different{
+    background-color: #29cdf621;
+}
+.service-card-image{
+    height: 4rem;
+    width: 4rem;
+}
+.service-card-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.service-card-text{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #424247;
+}
+
+/* deal section styles */
+.deals-heading{
+    margin-top: 5.8rem;
+    text-align: center;
+}
+.deals-heading-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.deals-heading-text{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #424247;
+}
+.deal-one , .deal-two , .deal-three{
+    height: 22rem;
+    margin-top: 1.6rem;
+}
+.deal-one , .deal-three{
+    background-image: url(../images/Group39.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    border-radius: 1.2rem;
+    padding: 3.11rem 3.11rem 3.11rem 0;
+}
+.deal-two{
+    background-image: url(../images/Group40.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    border-radius: 1.2rem;
+    padding: 3.11rem 0 3.11rem 3.11rem;
+}
+.deals-card{
+    height: 18rem;
+    width: 32.5rem;
+    background-color: #ffffffc9;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    float: right;
+}
+.different{
+    float: left;
+}
+.plan-container, .plan-section{
+    display: flex;
+    gap: 1rem;
+}
+.color{
+    color: #FF5400;
+    font-size: 1rem;
+}
+.plan-text{
+    color: #424247;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 0.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+.card-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card-text{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #424247;
+}
+.price-heading{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FF5400;
+}
+.card-input-button{
+    width: 8rem;
+    height: 3rem;
+    background-color: #ff5500d8;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* .deal-two{
+    background-image: url(../images/Group\ 40.png);
+} */
 /* for medium device */
-@media screen and (min-width: 490px) and (max-width: 850px){
+@media screen and (min-width: 490px) and (max-width: 1200px){
     body{
         margin: 2.0rem 0.8rem 0rem 0.8rem;
     }
@@ -339,7 +475,7 @@ body{
         
     }
     .input-field{
-        width: 19.5rem;
+        width: 23rem;
         height: 5.4rem;
         margin-top: 1rem;
         margin-left: 0;
@@ -350,7 +486,7 @@ body{
         width: 20rem;
     }
     .input-button{
-        width: 19.5rem;
+        width: 23rem;
         height: 5.4rem;
         margin-top: 1rem;
     }
@@ -424,5 +560,55 @@ body{
         font-size: 2rem;
         font-weight: 400;
     }
+    /* service section style */
+    .service-heading{
+        margin-top: 3.8rem;
+    }
+    .service-heading-title{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .service-heading-text{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .service-list{
+        flex-direction: column;
+    }
+    .service-card{
+        width: 100%;
+        height: 15rem;
+        margin-top: 1rem;
+    }
+
+    /* deal section styles */
+    .deal-one , .deal-two , .deal-three{
+        height: 42rem;
+        width: 100%;
+        margin-top: 1.2rem;
+        position: relative;
+    }
+    .deal-one , .deal-three{
+        padding: 0 0.9rem 0.9rem 0.9rem;
+    }
+    .deal-two{
+        padding: 0 0.9rem 0.9rem 0.9rem;
+    }
+    .deals-card{
+        height: 24rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .different{
+        position: absolute;
+        bottom: 0;
+    }
+    .plan-container{
+        flex-direction: column;
+    }
+
 }
 
