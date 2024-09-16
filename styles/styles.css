@@ -172,8 +172,10 @@ body{
 }
 
 /* destination section styles */
-.destionation-details{
+.destination-section{
     margin-top: 5.8rem;
+}
+.destionation-details{
     text-align: center;
 }
 .destination-title{
@@ -306,6 +308,9 @@ body{
 }
 
 /* deal section styles */
+.deals-section{
+    margin: 3.5rem 3rem 0rem 0;
+}
 .deals-heading{
     margin-top: 5.8rem;
     text-align: center;
@@ -321,7 +326,9 @@ body{
 }
 .deal-one , .deal-two , .deal-three{
     height: 22rem;
+    width: 100%;
     margin-top: 1.6rem;
+    position: relative;
 }
 .deal-one , .deal-three{
     background-image: url(../images/Group39.png);
@@ -341,14 +348,19 @@ body{
 }
 .deals-card{
     height: 18rem;
-    width: 32.5rem;
+    width: 50%;
     background-color: #ffffffc9;
     padding: 2rem;
     border-radius: 0.8rem;
-    float: right;
+    position: absolute;
+    right: 0;
+    margin-right: 3.1rem;
+
 }
 .different{
-    float: left;
+    position: absolute;
+    left: 0;
+    margin-left: 3.1rem;
 }
 .plan-container, .plan-section{
     display: flex;
@@ -389,6 +401,152 @@ body{
     margin-top: 0.6rem;
     font-size: 1rem;
     font-weight: 600;
+}
+.deal-section-button-container{
+    text-align: center;
+}
+.deal-section-button{
+    width: 9.6rem;
+    height: 3rem;
+    background-color: #ff5500d8;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2.2rem;
+}
+/* popular tour section */
+.perfect-place-section{
+    width: 100%;
+    margin: 5.8rem 0 0 0;
+}
+.senario-section{
+    display: flex;
+    gap: 30px;
+}
+.senario-section-left-side{
+    width: 50%;
+    margin-top: 0.5rem;
+}
+.senario-section-heading{
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.senario-section-text{
+    color: #424247;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.senario-section-left-side ul{
+    margin-top: 2rem;
+}
+.senario-section-left-side ul li{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #424247;
+}
+.senario-section-right-side{
+    width: 50%;
+    text-align: right;
+}
+.right-side-video{
+    height: 24rem;
+    width: 100%;
+    border-radius: 2rem;
+}
+.input-button-tour{
+    width: 10.8rem;
+    height: 3.4rem;
+    background-color: #ff5500d8;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    margin-top: 0.9rem;
+}
+
+/* newsletter section style */
+.newsletter-section{
+    width: 100%;
+    margin: 5.8rem 0 0 0;
+}
+.news-section{
+    display: flex;
+    gap: 30px;
+}
+.newsletter-section-left-side{
+    width: 40%;
+    margin-top: 0.5rem;
+    padding: 3rem;
+    border: 0.1rem solid #FF5400;
+    border-radius: 0.8rem;
+}
+.newsletter-section-heading{
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.newsletter-section-text{
+    color: #424247;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+}
+.liner{
+    color: #424247;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+}
+.newsletter-section-name{
+    width: 93%;
+    height: 3.4rem;
+    background-color: #e6e2e2;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+.newsletter-section-email{
+    width: 93%;
+    height: 3.4rem;
+    background-color: #e6e2e2;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+input::placeholder{
+    font-size: 1.5rem;
+    color: #a9a9ac;
+}
+.subscribe-button{
+    width: 100%;
+    height: 5.4rem;
+    background-color: #ff5500d8;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.newsletter-section-right-side{
+    width: 60%;
+    border-radius: 0.8rem;
+    background-image: url(../images/Rectangle\ 8\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.discount{
+
 }
 /* .deal-two{
     background-image: url(../images/Group\ 40.png);
@@ -599,8 +757,7 @@ body{
         width: 100%;
         position: absolute;
         bottom: 0;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        margin: 0 1rem 1rem 1rem ;
     }
     .different{
         position: absolute;
@@ -608,6 +765,35 @@ body{
     }
     .plan-container{
         flex-direction: column;
+    }
+    /* perfect place section */
+    .perfect-place-section{
+        width: 100%;
+        margin: 2.5rem auto 0 auto;
+    }
+    .senario-section{
+        flex-direction: column;
+    }
+    .senario-section-left-side{
+        width: 100%;
+    }
+    .senario-section-heading{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .senario-section-text{
+        font-size: 1.2rem;
+    }
+    .senario-section-left-side ul li{
+        font-size: 1.2rem;
+    }
+    .right-side-video{
+        height: 16rem;
+        width: 100%;
+    }
+    .senario-section-right-side{
+        width: 100%;
+        margin-top: 1.7rem;
     }
 
 }
