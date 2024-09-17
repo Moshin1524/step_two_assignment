@@ -416,7 +416,7 @@ body{
     font-weight: 600;
     margin-top: 2.2rem;
 }
-/* popular tour section */
+/* perfect place section */
 .perfect-place-section{
     width: 100%;
     margin: 5.8rem 0 0 0;
@@ -454,6 +454,7 @@ body{
 .senario-section-right-side{
     width: 50%;
     text-align: right;
+    padding: 0.7rem;
 }
 .right-side-video{
     height: 24rem;
@@ -477,7 +478,7 @@ body{
 }
 .news-section{
     display: flex;
-    gap: 30px;
+    gap: 1.9rem;
 }
 .newsletter-section-left-side{
     width: 40%;
@@ -546,7 +547,73 @@ input::placeholder{
     background-repeat: no-repeat;
 }
 .discount{
-
+    height: 6.5rem;
+    width: 20.25rem;
+    background-color: #FF5400;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    position: relative;
+    top: 29.2rem;
+    left: 25.6rem;
+    transform: rotate(-20deg);
+    text-align: center;
+}
+.discount-site{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0.8rem;
+}
+.discount-percentage{
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+/* footer styles */
+.footer-section{
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    background-color: #1313182a;
+    margin-top: 6rem;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    margin-bottom: 0;
+}
+.footer-title-image{
+    height: 2.5rem;
+    width: 3.1rem;
+}
+.footer-title-text{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 0.6rem;
+}
+.footer-text{
+    color: #424247;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+.icon-list{
+    margin-top: 3.2rem;
+}
+.icon-list>i{
+    margin-right: 1.9rem;
+    font-size: 1.9rem;
+}
+.rights{
+    color: #424247;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 7.8rem;
+    margin-left: 1.4rem;
 }
 /* .deal-two{
     background-image: url(../images/Group\ 40.png);
@@ -796,5 +863,18 @@ input::placeholder{
         margin-top: 1.7rem;
     }
 
+    /* newsletter section */
+    .news-section{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .newsletter-section-left-side{
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 1.6rem;
+    }
+    .newsletter-section-right-side{
+        width: 100%;
+    }
 }
 
